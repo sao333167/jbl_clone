@@ -1,0 +1,46 @@
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background: url('https://ucarecdn.com/f874a884-c2cd-4a8f-8436-c5a54a9d664d/-/format/auto/-/preview/2560x2560/-/quality/lighter/JBL_Charge_5_Category_Banner_1500x1300px.png') no-repeat center center/cover;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .bannerText {
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+  }
+  
+  .bannerText h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .bannerText p {
+    font-size: 30px;
+    margin: 0;
+    line-height: 0.5;
+  }
+
+  @media (max-width:1024px){
+    .banner {margin-top:65px;height: 22vh;background: url('https://ucarecdn.com/f874a884-c2cd-4a8f-8436-c5a54a9d664d/-/format/auto/-/preview/1500x1500/-/quality/lighter/JBL_Charge_5_Category_Banner_1500x1300px.png') no-repeat center center/cover;}
+    .bannerText {left: 38%;top:40%}
+    .bannerText h1 {font-size: 60px;margin: 0;}
+    .bannerText p {font-size: 28px; line-height: 1;}
+  }
+
+  @media screen and (min-width:1026px){
+    .bannerText { top: 55%;left: 32%;}
+  }
+  @media screen and (max-width:1600px) {
+    .bannerText { top: 55%;left: 36%;}
+    .bannerText p{ line-height: 1;}
+  }
+  

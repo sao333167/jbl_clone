@@ -1,0 +1,121 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 17vh; /* Adjust height as needed */
+    background-image: url('https://support.jbl.com/on/demandware.static/-/Library-Sites-SharedLibrary-SUPPORT/default/dw9f7409d4/context-jbl/content/banners/customer-service.webp'); /* Update with the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top:95px;
+  }
+  
+  .titleBanner {
+    padding:20px;
+    margin-left:20px;
+    font-size: 64px; 
+    font-weight: bold;
+  }
+  
+
+.formContainer {
+    padding: 20px;
+    max-width: 100%;
+    /* margin: 0 auto; */
+  }
+  .labelText{
+    font-size:20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  /* contact-section */
+  
+  .contactSection {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .sendButton {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 17.16px;
+    border-radius: 32px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 45.44px;
+    margin-bottom: 40px;
+  }
+  
+  .contactMethods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .method {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    padding:90px;
+    text-align: center; /* Align text to center */
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .method h3 {
+    font-size: 37px;
+    margin-bottom: 10px;
+  }
+  
+  .method p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  

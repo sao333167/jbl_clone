@@ -1,0 +1,20 @@
+/* styles/PrivacyPolicy.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:70px 120px;
+    /* margin-top:10px;   */
+    font-size:21px;
+  }
+  .header{
+    text-align: center;
+    margin-top:70px;
+    margin-bottom:30px;
+  }
+  .para{
+    text-indent:35px;
+  }
+  
+  
+  
