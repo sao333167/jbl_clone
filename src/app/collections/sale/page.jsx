@@ -1,10 +1,5 @@
-import Carousel from "@/app/components/Carousel";
-import ProductsHeader from "@/app/components/ProductHeader";
+import Banner from '@/app/components/Banner'
 import SubscriptionSection from "@/app/components/Subscription";
-import SliderBarOption from '@/app/components/SliderBarOption';
-import Link from "next/link";
-import Card from "@/app/components/Card";
-import style from './sale.module.css'
 
 export default function Sale() {
     const product = {
@@ -12,29 +7,11 @@ export default function Sale() {
         colors: ['#000000'],
         name: 'JBL QUANTUM 400',
         price: '฿3,990.00'
-      };
-  return (
-    <>
-      <div className="mt-[72px]">
-        <div className={style.saleBanner}>
-
-        </div>
-        <div className="route">
-          <Link href="/">
-            <span className="home">Home / </span>
-          </Link>
-          <span className="sub-dir">Sale</span>
-        </div>
-        <ProductsHeader />
-        <div className="flex">
-          <div>
-            
-            <SliderBarOption />
-          </div>
-          <Card product={product} />
-        </div>
-        <SubscriptionSection />
-      </div>
-    </>
-  );
+    };
+    return (
+        <>
+            <Banner/>
+            <SubscriptionSection />
+        </>
+    );
 }

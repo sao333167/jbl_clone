@@ -22,10 +22,13 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 .header .header__logo .logo__h1{line-height:0}
 .header .header__logo .logo__link{display:inline-block;text-decoration:none}
 .header .header__menu{display:flex}
+.header .header__menu ul li{height:100%;}
 .header .header__menu ul li a{display:inline-flex;align-items:center}
 .header .header__menu ul li a .icon{transform:rotate(0deg)}
 .header .header__menu ul li .item--toggle{position:relative;display:inline-flex;align-items:center;overflow:hidden;cursor:pointer}
 .header .header__menu ul li .item--toggle .icon{flex-shrink:0;width:20px;height:20px;margin-left:5px;transition:transform .3s}
+.header .header__menu ul li.hover_nav .main-nav__item{box-shadow:inset 0 -2px 0 0 #E53405;}
+.header .header__menu ul li.hover_nav .main-nav__childs{display:block;}
 .header .header__icons,.header .header__logo{display:flex;margin-left:-10px}
 .header .header__icons{margin-right:-10px;justify-content:flex-end}
 .header .header__icon{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;width:44px;height:44px;padding:10px;text-align:center}
@@ -47,6 +50,13 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 .banner,.banner-item{display:flex;align-items:center}
 .banner{justify-content:space-around;background-color:#000;padding:20px 0;color:#fff}
 .banner-item{text-align:center;gap:5px}
+
+.banner__section{margin-top:93px;display:flex;flex-direction:column;height:300px;padding-top:60px;padding-bottom:10px;background-color:#d3d3d3;background-position:center center;background-size:cover;}
+.banner__section.im__001{background-image:url(https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg);}
+.banner__section.im__002{background-image:url(https://ucarecdn.com/1bede79d-fb0a-482a-bfc8-9c95e5bef989/-/format/auto/-/preview/3000x3000/-/quality/lighter/Banner%20Patybox310-02.png)}
+.banner__inn{max-width:none;padding-top:0;padding-left:70px;padding-bottom:10px;}
+.banner__section .banner__title h1{padding-bottom:10px;font-family:DBHelvethaicaX;font-size:60px;font-weight:700;line-height:1.25em;color:#fff;letter-spacing:0;text-transform:none;}
+.banner__section .banner__subTitle p{padding-right:80px;font-family:DBHelvethaicaX;font-size:28px;font-weight:700;line-height:1em;color:#fff;letter-spacing:0;text-transform:none;}
 
 .auth__section{margin:150px 0 32px;}
 .auth__container{width:100%;max-width:500px;margin:0 auto;padding:0 32px;text-align:center}
@@ -70,7 +80,7 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 .subscription-section{padding-top:200px;padding-bottom:200px;background-color:#d3d3d3;background-image:url(https://ucarecdn.com/e456b23d-5144-49e3-a4be-691b836bd3b6/-/format/auto/-/preview/3000x3000/-/quality/lighter/Sign%20up%20BannerSign%20up%20Banner_Desktop.jpg);background-size:cover;background-position:center center}
 .subscription-content{position:relative;padding:60px 20px 30px;z-index:1;display:flex;flex-direction:column;max-width:100%;align-items:center;justify-content:center}
 .subscription-title{width:100%;margin-bottom:25px;}
-.subscription-title h4{font-size:30px;line-height:1em;letter-spacing:0;color:#fff;text-transform:none;font-weight:400;text-align:center;}
+.subscription-title h4{font-size:40px;line-height:1em;letter-spacing:0;color:#fff;text-transform:none;font-weight:400;text-align:center;}
 .subscription-form{display:flex;justify-content:center;align-items:center}
 .subscription-input{padding:10px;border:0;border-radius:25px 0 0 25px;width:700px;font-size:16px}
 .subscription-button{padding:10px 20px;border:0;border-radius:0 25px 25px 0;background-color:#ff4500;color:#fff;font-size:16px;cursor:pointer}
@@ -113,7 +123,7 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 
 @media (max-width: 500px) {
   .banner{background-color:#fff;color:#000;display:no}
-  .banner-item{display:flex;flex-direction:column;gap:2px;justify-align:center}
+  .banner-item{display:flex;flex-direction:column;gap:2px;justify-content:center;}
   .banner-item img{background-color:#fff;width:50px;height:auto}
   .banner-item p{font-size:18px;width:80px;line-height:1}
   .banner-item .img1{width:45px;content:url(https://ucarecdn.com/2a3a5226-38ba-4b2c-8c83-ccc8bc797048/-/format/auto/-/preview/100x100/-/quality/lighter/Icons%20Assets_Delivery.png)}
@@ -122,9 +132,9 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 }
 
 @media (min-width: 769px) {
-  .header .header__menu .main-menu__content{width:100%;color:#fff;background-color:#000}
+  .header{padding:16px 0 10px;}
+  /* .header .header__menu .main-menu__content{width:100%;color:#fff;background-color:#000} */
   .header .header__icons,.header .header__logo{flex:1 1 auto;padding-left:calc(6*.4rem)}
-  .header .header__icons{margin-bottom:16px}
   .header .header__logo{padding-left:0;padding-right:calc(6*.4rem)}
   .header .header__menu .main-nav li a.main-nav__item{margin:0 1.2rem;padding:1rem 0;transition:box-shadow .1s}
   .header .header__icon .header__cart-count .header__cart-count-number{position:relative;top:.05em}
@@ -152,8 +162,7 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 @media (max-width: 768.98px) {
   .header .header__container{padding:0 32px}
   .header{padding:8px 0 10px}
-  .header .header__menu .main-menu__content{min-width:0;max-width:none;visibility:hidden;padding-bottom:calc(8*.4rem);overflow:hidden;box-shadow:0-1px 0 rgba(255,255,255,.2)}
-  .header .header__menu .main-menu__content,.header .header__menu .main-menu__content .main-nav__child{position:fixed;left:0;width:100vw;height:calc(957px - 85px,100px);padding:0 32px 60px;color:#fff;background-color:#000;overflow-y:scroll}
+  .header .header__menu .main-menu__content,.header .header__menu .main-menu__content .main-nav__child{position:fixed;z-index:30;top:85px;left:0;width:100vw;height:calc(100vh - 85px);padding-right:32px;padding-bottom:60px;padding-left:32px;overflow-y:hidden;background-color:#000;color:#fff}
   .header .header__menu .main-menu__toggle,.main-menu__toggle{margin:0 10px 0-10px}
 
   .banner{background-color:#fff;color:#000;display:no}
@@ -181,6 +190,14 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
   .subscription-content{padding-bottom:0;padding-top:0}
   .subscription-form{display:block;text-align:right;width:100%}
   .subscription-input{font-size:12px;color:#000;font-weight:400;width:80%;border-radius:20px 0 0 20px/20px 0 0 20px;height:40px;line-height:40px;background-color:#fff;border-style:none;border-width:0;padding-left:15px;border-color:#fff;font-family:'"DBHelvethaicaX"'}
+
+  .banner__section{margin-top:81px;}
+  .banner__section{display:flex;flex-direction:column;height:300px;padding-top:60px;padding-bottom:10px;background-color:#d3d3d3;background-position:center center;background-size:cover;}
+  .banner__section.im__001{background-image:url(https://ucarecdn.com/17e92c77-3898-4eb7-b087-b1bc45def4be/-/format/auto/-/preview/1500x1500/-/quality/lighter/Banner-wireless-speaker-mobile.jpg);}
+  .banner__section.im__002{background-image:url(https://ucarecdn.com/f29c2160-932d-49a2-b8e4-d249d37040c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/JBL_Partybox_310_Sub_Category_Banner_800x400px.jpg);}
+  .banner__inn{max-width:none;padding-top:0;padding-left:30px;padding-bottom:10px;}
+  .banner__section .banner__title h1{font-family:DBHelvethaicaX;font-size:50px;font-weight:700;line-height:1em;color:#fff;letter-spacing:0;text-transform:none;}
+  .banner__section .banner__subTitle p{padding-right:80px;font-family:DBHelvethaicaX;font-size:24px;font-weight:700;line-height:1em;color:#fff;letter-spacing:0;text-transform:none;}
 }
 
 @media (min-width: 1024px) {
@@ -191,6 +208,15 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
   .footer-col--links{flex:0 1 auto;min-width:130px;max-width:25%}
   .footer-menu__links{padding-bottom:calc(2*.4rem)}
   .footer-col--text:not(.footer-col--text-full-width){flex:1 1 350px;max-width:460px}
+}
+
+@media(min-width: 1200px){
+  .banner__section{display:flex;flex-direction:column;height:300px;padding-top:60px;padding-bottom:10px;background-color:#d3d3d3;background-position:center center;background-size:cover;}
+  .banner__section.im__001{background-image:url(https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg);}
+  .banner__section.im__002{background-image:url(https://ucarecdn.com/1bede79d-fb0a-482a-bfc8-9c95e5bef989/-/format/auto/-/preview/3000x3000/-/quality/lighter/Banner%20Patybox310-02.png);}
+  .banner__inn{max-width:none;padding-top:0;padding-left:70px;padding-bottom:10px;}
+  .banner__section .banner__title h1{padding-bottom:10px;font-family:DBHelvethaicaX;font-size:60px;font-weight:700;line-height:1.25em;color:#fff;letter-spacing:0;text-transform:none;}
+  .banner__section .banner__subTitle p{padding-right:80px;font-family:DBHelvethaicaX;font-size:28px;font-weight:700;line-height:1em;color:#fff;letter-spacing:0;text-transform:none;}
 }
 
 @media (min-width: 1280px) {
@@ -848,126 +874,6 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
   }
 }
 
-/* Banner Section */
-.banner-section {
-  margin-top: 95px;
-  position: relative;
-  width: 100%;
-  height: 35vh; /* Adjust height as needed for desktop */
-  background: url("https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg")
-    no-repeat center center/cover; /* Background image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-.banner-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.banner-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-}
-.banner-title {
-  font-size: 60px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.banner-subtitle {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-.breadcrumb {
-  font-size: 14px;
-  color: #ccc;
-}
-.banner-section {
-  margin-top: 95px;
-  position: relative;
-  width: 100%;
-  height: 35vh; /* Adjust height as needed for desktop */
-  background: url("https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg")
-    no-repeat center center/cover; /* Background image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-.banner-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.banner-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-}
-.banner-title {
-  font-size: 60px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.banner-subtitle {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-.breadcrumb {
-  font-size: 14px;
-  color: #ccc;
-}
-.banner-section {margin-top:95px;position: relative;width: 100%;height: 35vh; background: url('https://ucarecdn.com/3bf34f37-16d5-47de-aaa5-fa3610a24152/-/format/auto/-/preview/2560x2560/-/quality/lighter/Website_Category%20Landing%20Page%20-%20Speaker%201500x300.jpg') no-repeat center center/cover; display: flex;align-items: center;justify-content: center;text-align: center;color: white;}
-.banner-section::after {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-.banner-content {position: relative;z-index: 1;padding: 20px;}
-.banner-title {font-size: 60px;font-weight: bold;margin-bottom: 10px;}
-.banner-subtitle {font-size: 28px;margin-bottom: 20px;}
-.breadcrumb {font-size: 14px;color: #ccc;}
-
-/* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
-  .banner-section {
-    height: 300px;
-    height: 300px;
-  }
-
-  .banner-title {
-    font-size: 24px;
-  }
-
-  .banner-subtitle {
-    font-size: 14px;
-  }
-
-  .breadcrumb {
-    font-size: 12px;
-  }
-}
-@media (max-width: 576px) {
-  .banner-section {
-    height: 250px;
-  }
-  .banner-title {
-    font-size: 20px;
-  }
-  .banner-subtitle {
-    font-size: 12px;
-  }
-  .breadcrumb {
-    font-size: 10px;
-  }
-}
-
 /* new section */
 .new-section {
   display: flex; /* align-items: center;justify-content: center; */
@@ -1599,45 +1505,11 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
 .swiper-pagination-bullet {
   @apply !w-[20px] !h-[5px] !rounded-sm !bg-white;
 }
-.header {
-  padding: 0px;
-}
-.hover_nav {
-  padding: 15px 0px;
-  border-bottom: 4px solid transparent;
-  position: relative;
-  /* background-color: red; */
-  height: 100%;
-  /* transition: border-color 0.2s ease;   */
-}
-.header__icons {
-  /* padding: 25px 0px; */
-  margin: 15px 0px;
-  /* background:red; */
-}
-.hover_nav:hover {
-  /* position: absolute; */
-  /* padding: 10px 0px; */
-  border-bottom: 4px solid #e64338;
-  transition: border-color 0.4s ease;
-}
 
 
-.main-nav__childs {
-  top: 89px;
-  color: white;
-  position: absolute;
-  display: none;
-  z-index: 1;
-  background-color: black;
-  width: 100vw;
-}
-.main-nav__childs li {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+
+/* 
+
 .hover_nav:hover .main-nav__childs {
   display: block;
 }
@@ -1646,5 +1518,57 @@ body {:lang(th) {font-family: "DBHelvethaicaX";}}
   color: #c9c9c9;
 }
 
-.hover_nav:hover .main-nav__childs {width:250px;}
+.hover_nav:hover .main-nav__childs {width:250px;} */
+
+.main-nav__childs{visibility:hidden;position:absolute;z-index:10;top:100%;min-width:170px;max-height:max(100vh - 150px) - 70px, 60vh;padding:2rem 1.2rem;overflow:auto;transition:transform .3s,opacity .2s,visibility .3s;transition-timing-function:cubic-bezier(.19,1,.22,1);border-top:1px solid rgba(255,255,255,.2);background-color:#000;box-shadow:0 5px 5px 0 rgba(0,0,0,.1);color:#222}
+.main-nav__childs li{color:#fff;padding:12px 16px;text-decoration:none;display:block}
+
+
+
+@media (max-width: 768.98px){
+  .header .header__menu.is-open > .main-menu__content{visibility:visible;pointer-events:initial;}
+  .header .header__menu.is-open > .main-menu__content{display:block;opacity:1;}
+  .header .header__menu > .main-menu__content{display:none;opacity:0;transition:opacity 0.3s, visibility 0.3s;}
+  .header .header__menu ul li .item--toggle{display:flex;align-items:center;justify-content:space-between;width:100%;padding-top:2.4rem;padding-bottom:2.4rem;padding-inline-start:16px;padding-inline-end:44px;line-height:1.5;}
+  .header .header__menu ul li .main-nav__item{display:flex;align-items:center;justify-content:space-between;width:100%;padding-top:2.4rem;padding-bottom:2.4rem;padding-inline-start:16px;padding-inline-end:44px;line-height:1.5;}
+  .header .header__menu ul li .item--toggle .icon{position:absolute;right:16px;}
+  .main-nav > li{border-bottom:1px solid rgba(255,255,255,.2)}
+
+}
+
+
+
+
+
+.sq-results{display:flex;flex-wrap:wrap;position:relative;width:100%}
+.sq-results-item{width:33.33%}
+.sparq-card{display:flex;flex-direction:column;height:100%;margin-bottom:15px;padding-left:15px;padding-right:0;width:100%}
+.sq-sy-image{margin-bottom:10px;padding-top:100%;position:relative;height:100%;width:100%;background-color:#f5f6f7}
+img.alternative.item-image,img.primary.item-image{bottom:0;display:block;height:70%;left:50%;margin:0 auto;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .3s linear;width:100%}
+img.alternative.item-image, img.primary.item-image{object-fit:contain;}
+.sparq-thumbnail-wrap{order:1;position:relative}
+.color-swatch-container{position:absolute;bottom:18px;z-index:5}
+.sq-palette{display:flex;align-items:center;margin-left:5px;flex-wrap:wrap;row-gap:10px}
+.sq-pallete-item{margin-left:10px;margin-top:2px}
+.sq-pallete-color{border-radius:50%;outline:solid 1px lightgray;}
+.sq-pallete-color{display:inline-flex;height:20px;width:20px;margin-right:5px}
+a.sparq-loop-product.sq-class{display:block;position:relative}
+.sparq-bottom{display:flex;flex-direction:column;flex-wrap:wrap;order:2;height:100%!important;flex-grow:1}
+.sparq-bottom{margin-bottom:20px}
+.sparq-bottom-items{order:2;margin-top:-15px;border:1px solid #e8e9e8;padding:10px}
+.sparq-product-title a{color:#121212;display:block;text-decoration:none;font-weight:700;text-transform:uppercase;font-size:22px}
+.sq-product-price{align-items:center;display:flex;flex-wrap:wrap;column-gap:5px}
+span.sq-price{color:#f37254;font-weight:700;word-spacing:-5px;font-size:24px}
+.sq-product-price span.sq-compare-price{padding-left:5px;text-decoration:line-through;padding-right:5px;color:#91929d}
+span.sq-discount-span{border:2px solid #f37254;color:#f37254;padding:0 5px;font-size:12px;text-transform:uppercase;font-weight:700}
+span.sq-discount-span::after{content:attr(data-value)}
+
+
+
+
+
+
+
+
+
 

@@ -26,7 +26,7 @@ export default function Footer() {
                                         <Link href="/collections/accessories">Accessories</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Sale</Link>
+                                        <Link href="/collections/sale">Sale</Link>
                                     </li>
                                 </ul>
                             </Accordion>
@@ -62,19 +62,19 @@ export default function Footer() {
                             <Accordion title="เกี่ยวกับเรา">
                                 <ul className="footer-menu__links disclosure__content" role="list">
                                     <li>
-                                        <Link href="https://www.harman.com/" target='_blank'>Harman Corporate</Link>
+                                        <Link href="http://www.harman.com/EN-US/pages/Home.aspx" target='_blank'>Harman Corporate</Link>
                                     </li>
                                     <li>
                                         <Link href="/pages/privacy-policy-statement">นโยบายความเป็นส่วนตัว</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Terms of Sale</Link>
+                                        <Link href="/pages/terms">Terms of Sale</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Terms of Use</Link>
+                                        <Link href="/pages/terms-of-use">Terms of Use</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Why Buy Direct</Link>
+                                        <Link href="/pages/why-buy-direct">Why Buy Direct</Link>
                                     </li>
                                 </ul>
                             </Accordion>
@@ -86,9 +86,9 @@ export default function Footer() {
                                     <p>
                                         บริษัท มหาจักรดีเวลอปเมนท์ จำกัด<br/>
                                         46 ถนนสุขุมวิท 3 (นานาเหนือ) แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพฯ 10110<br/>
-                                        สอบถามข้อมูลการสั่งซื้อ : <Link href=""><span>02-256-0020</span></Link><br/>
-                                        ศูนย์บริการ/ส่งเคลมสินค้า : <Link href=""><span>02-378-9999</span></Link><br/>
-                                        อีเมล์ : <Link href=""><span>onlinesupport@mahajak.com</span></Link>
+                                        สอบถามข้อมูลการสั่งซื้อ : <Link href="tel:02-256-0020"><span>02-256-0020</span></Link><br/>
+                                        ศูนย์บริการ/ส่งเคลมสินค้า : <Link href="tel:02-378-9999"><span>02-378-9999</span></Link><br/>
+                                        อีเมล์ : <Link href="mailto:onlinesupport@mahajak.com"><span>onlinesupport@mahajak.com</span></Link>
                                     </p>
                                 </div>
                                 <div className="footer-block__btns footer-block__social">
