@@ -1,4 +1,4 @@
-import "./Terms.module.css";
+
 const Terms = () => {
     return (
         <div className={styles.container}>
