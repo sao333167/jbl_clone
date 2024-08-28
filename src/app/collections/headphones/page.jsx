@@ -1,30 +1,18 @@
-import MainProductCard from '@/app/components/MainProductCard';
-import SubscriptionSection from '@/app/components/Subscription';
-import Link from 'next/link';
 import React from 'react';
+import CollectionProduct from '@/app/components/CollectionProduct';
+import SubscriptionSection from '@/app/components/Subscription';
+import Banner from '@/app/components/Banner';
 
-const HeadphoneBanner = () => {
-  return (
-    <>
-    <div className="headphoneBanner">
-      <div className="headphoneBannerContent">
-        <h1>หูฟัง</h1>
-        <p>ฟังคุณภาพเสียง JBL ที่ออกแบบมาอย่างมีสไตล์ สวมใส่สบาย คุณภาพสูง</p>
-      </div>
-    </div>
-    <div className='route'>
-      <Link href="/">
-        <span className='home'>Home / </span>
-      </Link>
-      <span className='sub-dir'>Headphones</span>
-    </div>
-    <div className='flex'>
-      <MainProductCard/>
-      <MainProductCard/>
-      </div>
-    <SubscriptionSection/>
-    </>
-  );
+import { Headphones } from '@/app/data/Headphones'
+
+const headphones = () => {
+    return (
+        <>
+            <Banner title="หูฟัง" subTitle="ฟังคุณภาพเสียง JBL ที่ออกแบบมาอย่างมีสไตล์ สวมใส่สบาย คุณภาพสูง" classBg="im__004"/>
+            <CollectionProduct collectionUrl={Headphones}/>
+            <SubscriptionSection/>
+        </>
+    );
 };
 
-export default HeadphoneBanner;
+export default headphones;

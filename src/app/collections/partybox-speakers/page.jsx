@@ -3,7 +3,7 @@ import Banner from '@/app/components/Banner'
 import SubscriptionSection from "@/app/components/Subscription";
 import Filter from '@/app/components/Filter';
 import ProductList from '@/app/components/ProductList';
-import { PartyboxSpeakers } from '@/app/data/partyboxSpeakers';
+import { PartyboxSpeakers } from '@/app/data/PartyboxSpeakers';
 
 const page = () => {
     return (
