@@ -14,22 +14,26 @@ const SubMenu = ({ item }) => {
     const showSubNav = () => setSubNav(!subnav)
 
     useEffect(() => {
-        // Add event listener to handle screen resizing
         window.addEventListener("resize", checkScreenSize);
-    
-        // Cleanup the event listener
         return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
 
     if (item.subNav) {
         return (
             <li className={isHovered & isMobile ? "hover_nav" : ""} onMouseEnter={() => {setHovered(true)}} onMouseLeave={() => {setHovered(false)}}>
+            {isMobile ? (
                 <Link href={item.path} className="main-nav__item item--toggle">
                     <span>{item.title}</span>
                     <span>{item.icon}</span>
                 </Link>
+            ) : (
+                <button type="button" className="main-nav__item item--toggle">
+                    <span>{item.title}</span>
+                    <span>{item.icon}</span>
+                </button>
+            )}
                 <ul className="main-nav__childs">
-                    {isHovered && item.subNav.map((item, index) => {
+                    {item.subNav.map((item, index) => {
                         return (
                             <li key={index}>
                                 <Link href={item.path}>{item.title}</Link>

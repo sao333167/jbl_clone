@@ -20,6 +20,23 @@ export const WirelessSpeakers = [
                         name: "rgb(0, 0, 0)"
                     }
                 ],
+                // productdetails: [
+                //     {
+                //         id: 1694425760688,
+                //         title: "JBL Boombox 3",
+                //         color: [
+                //             {name: "rgb(0, 0, 0)"},
+                //             {name: "rgb(46, 72, 89)"},
+                //             {name: "rgb(255, 255, 255)"}
+                //         ],
+                //         price: 21900,
+                //         compare: 0,
+                //         discount: 0,
+                //         img: [
+                            
+                //         ]
+                //     }
+                // ]
             },
             {
                 id: 8972261916948,

@@ -12,8 +12,8 @@ export default function PopularProduct() {
                     <div className="">
                         <hr className="gf__separator"/>
                     </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
+                    <div className="owl-carousel owl-theme">
+                        <div className="item">
                             <div className="item__content">
                                 <div className="">
                                     <Link href="">
