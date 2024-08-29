@@ -1,32 +1,14 @@
-import MainProductCard from "@/app/components/MainProductCard";
-import Link from "next/link";
-import React from "react";
+import React from 'react';
+import CollectionProduct from '@/app/components/CollectionProduct';
+import SubscriptionSection from '@/app/components/Subscription';
+import Banner from '@/app/components/Banner';
 
-const HomeAudioBanner = () => {
-  return (
-    <>
-      <div className={"homeAudioBanner"}>
-        <div className={"bannerContent"}>
-          <h1 className={"bannerTitle"}>เครื่องเสียงบ้าน</h1>
-          <p className={"bannerSubtitle"}>
-            เพลิดเพลินได้ที่บ้าน
-            หรือที่ทำงานของคุณด้วยระบบโฮมเธียเตอร์ใหม่ล่าสุด, ลำโพงซาวด์บาร์,
-            ลำโพงเชื่อมต่อมือถือ และลำโพงคอมพิวเตอร์
-          </p>
-        </div>
-      </div>
-      <div className="route">
-        <Link href="/">
-          <span className="home">Home / </span>
-        </Link>
-        <span className="sub-dir">Gaming Series</span>
-      </div>
-      <div className="flex">
-      <MainProductCard/>
-      <MainProductCard/>
-      </div>
 
-    </>
-  );
+export default function AudioHome() {
+    return (
+        <>
+            <SubscriptionSection/>
+        </>
+    );
 }
-export default HomeAudioBanner;
+
